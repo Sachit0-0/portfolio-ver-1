@@ -22,14 +22,20 @@ font-size: larger !important  ;}
   color: var(--primary-white) !important;
 }
 
-.pure-white-text {
-  color: white ;
-}
+/* Add this CSS to your stylesheet or a separate CSS file */
+  .navkotext {
+    color: #fff; /* Bright text color (white) */
+    margin-right: 30px; /* Add spacing between links */
+    font-size: larger  !important  ;
+    
+  }
 
-.pure-white-text:hover{
-  transform: scale(1.2);
-  color:white 
-}
+  .navkotext:hover{
+    transform: scale(1.1); 
+    color: #fff   !important ;  
+    transition: transform 0.2s ease; 
+  }
+
 
 *{
   color:white ;
@@ -69,7 +75,8 @@ footer {
 
 
 .icon:hover {
-  transform: scale(1.5); /* Adjust the scale factor as needed */
+  transform: scale(1.3); /* Adjust the scale factor as needed */
+  transition: transform 0.2s ease; 
 }
 
 .typewriter {
@@ -100,5 +107,14 @@ footer {
   50% {
     border-color: white;
   }
+}
+
+.try{
+  margin: 90px;
+}
+
+.timeliness{
+  margin: 90px;
+  padding: 10px;
 }
 

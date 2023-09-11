@@ -8,9 +8,10 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FaGraduationCap as SchoolIcon, FaStar as StarIcon } from 'react-icons/fa';
+import { FaGraduationCap as SchoolIcon} from 'react-icons/fa';
 import { FaBirthdayCake } from 'react-icons/fa';
 import { FaQuestionCircle } from 'react-icons/fa';
+import { MDBSpinner } from 'mdb-react-ui-kit'; // Assuming you're using MDB React UI Kit for the spinner
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
   const whiteTextColor = '#fff'; // White text color
 
   return (
-    <div>
+    <div className='try'>
       <Container className="text-center">
         {/* Profile Image */}
         <Image
@@ -40,11 +41,12 @@ function App() {
           </div>
         </div>
         <div>
+          
         {/* Animated Social Buttons */}
         <div className="justify-content-center my-9" >
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Sachit0-0"
             target="_blank"
             rel="noopener noreferrer"
             className="icon-link mx-3"
@@ -52,7 +54,7 @@ function App() {
             <FaGithub className="icon" />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/sachit-dahal-59a05b212/e"
             target="_blank"
             rel="noopener noreferrer"
             className="icon-link mx-3"
@@ -60,7 +62,7 @@ function App() {
             <FaLinkedin className="icon" />
           </a>
           <a
-            href="https://www.facebook.com/yourusername"
+            href="https://www.facebook.com/sachit.dahal.7/"
             target="_blank"
             rel="noopener noreferrer"
             className="icon-link mx-3"
@@ -68,7 +70,7 @@ function App() {
             <FaFacebookSquare className="icon" />
           </a>
           <a
-            href="https://www.instagram.com/yourusername"
+            href="https://www.instagram.com/sachit_0.0/"
             target="_blank"
             rel="noopener noreferrer"
             className="icon-link mx-3"
@@ -76,7 +78,7 @@ function App() {
             <FaInstagram className="icon" />
           </a>
           <a
-            href="mailto:youremail@example.com"
+            href="mailto:sachitdahal33@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="icon-link mx-3"
@@ -85,6 +87,7 @@ function App() {
           </a>
           </div>
           <hr className="my-4 mt-5 "  style={{ marginTop: '40px' }} />
+                    
 
 
 
@@ -102,7 +105,7 @@ function App() {
 
 
 
-
+<div className='timeliness'>
 
           <VerticalTimeline>
             <VerticalTimelineElement
@@ -153,8 +156,18 @@ function App() {
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-              iconStyle={{ background: 'rgb(16, 204, 82)', color: whiteTextColor }}
-              icon={<StarIcon />}
+             iconStyle={{
+              background: 'rgba(0, 0, 0, 0)', // Fully transparent background
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: whiteTextColor
+            }}
+            icon={
+              <MDBSpinner role='status'>
+                <span className='visually-hidden'>Loading...</span>
+              </MDBSpinner>
+            }
             />
           </VerticalTimeline>
           <VerticalTimelineElement
@@ -169,10 +182,11 @@ function App() {
               <p style={{ color: whiteTextColor }}>The journey continues...</p>
             </VerticalTimelineElement>
           </VerticalTimeline>
-
+          </div>
         </div>
       </Container>
     </div>
+    
   );
 }
 

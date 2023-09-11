@@ -7,9 +7,25 @@ import {
   faReact,
   faBootstrap,
   faNodeJs,
-  faPython, // Add Python icon
-  faGitAlt, // Add Git icon
+  faPython,
+  faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
+
+// SkillItem component for each skill
+function SkillItem({ name, icon }) {
+  return (
+    <div className="col-md-3 mb-5">
+      <div className="bg-secondary text-white p-4 rounded text-center">
+        <FontAwesomeIcon
+          icon={icon}
+          className="text-success h4 mb-3"
+          alt={`${name} Icon`}
+        />
+        <h4 className="h6">{name}</h4>
+      </div>
+    </div>
+  );
+}
 
 export default function Skills() {
   const skills = [
@@ -19,15 +35,14 @@ export default function Skills() {
     { name: "React", icon: faReact },
     { name: "Bootstrap", icon: faBootstrap },
     { name: "Node.js", icon: faNodeJs },
-    { name: "Python", icon: faPython }, // Python skill with icon
-    { name: "Django", icon: faPython }, // Django skill (using Python icon)
-    { name: "Git", icon: faGitAlt }, // Git skill with icon
+    { name: "Python", icon: faPython },
+    { name: "Django", icon: faPython },
+    { name: "Git", icon: faGitAlt },
   ];
 
   return (
-    
-    <section id="skills" className="bg-dark py-5 my-4" style={{ marginTop: '20px', marginBottom: '30px', padding: '10px' }}>
-      <div className="container"  >
+    <section id="skills" className="bg-dark py-5 my-4">
+      <div className="container">
         <div className="text-center mb-5">
           <i className="bi bi-chip h2 mb-4"></i>
           <h1 className="display-4 text-white mb-4">Skills &amp; Technologies</h1>
@@ -39,18 +54,9 @@ export default function Skills() {
         </div>
         <div className="row">
           {skills.map((skill, index) => (
-            <div key={index} className="col-md-3 mb-5">
-              <div className="bg-secondary text-white p-4 rounded text-center">
-                <FontAwesomeIcon
-                  icon={skill.icon}
-                  className="text-success h4 mb-3"
-                />
-                <h4 className="h6">{skill.name}</h4>
-              </div>
-            </div>
+            <SkillItem key={index} name={skill.name} icon={skill.icon} />
           ))}
         </div>
-      
       </div>
     </section>
   );
