@@ -42,9 +42,7 @@ export default function Skills() {
           <i className="bi bi-chip h2 mb-4"></i>
           <h1 className="display-4 text-white mb-4">Skills &amp; Technologies</h1>
           <p className="lead text-white">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
-            ipsa delectus eum quo voluptas aspernatur accusantium distinctio
-            possimus est.
+          Some of the technologies that i have been working on
           </p>
         </div>
         <div className="row">
