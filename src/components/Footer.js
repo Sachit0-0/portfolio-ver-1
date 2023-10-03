@@ -1,123 +1,49 @@
 import React from 'react';
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBBtn
+} from 'mdb-react-ui-kit';
+import { FaFacebookSquare, FaTwitter, FaGoogle, FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export default function App() {
   return (
-    <MDBFooter bgColor='dark' className='text-center text-lg-start text-muted'>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-        <div className='me-5 d-none d-lg-block'>
-          <span>Get connected with us on social network:</span>
-        </div>
+    <MDBFooter className='bg-dark text-center text-white'>
+      <MDBContainer className='p-4 pb-0'>
+        <section className='mb-4'>
+          <MDBBtn outline color="light" floating className='m-1' href='https://www.facebook.com/sachit.dahal.7/' target="_blank" rel="noopener noreferrer">
+            <FaFacebookSquare />
+          </MDBBtn>
 
-        <div>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="facebook-f" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="twitter" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="google" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="instagram" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="linkedin" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="github" />
-          </a>
-        </div>
-      </section>
+          <MDBBtn outline color="light" floating className='m-1' href='https://twitter-link-here' target="_blank" rel="noopener noreferrer">
+            <FaTwitter />
+          </MDBBtn>
 
-      <section className=''>
-        <MDBContainer className='text-center text-md-start mt-5'>
-          <MDBRow className='mt-3'>
-            <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon icon="gem" className="me-3" />
-                Company name
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
-              </p>
-            </MDBCol>
+          <MDBBtn outline color="light" floating className='m-1' href='https://google-link-here' target="_blank" rel="noopener noreferrer">
+            <FaGoogle />
+          </MDBBtn>
+          <MDBBtn outline color="light" floating className='m-1' href='https://www.instagram.com/sachit_0.0/' target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </MDBBtn>
 
-            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Angular
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  React
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Laravel
-                </a>
-              </p>
-            </MDBCol>
+          <MDBBtn outline color="light" floating className='m-1' href='https://www.linkedin.com/in/sachit-dahal-59a05b212/' target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </MDBBtn>
 
-            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Settings
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Help
-                </a>
-              </p>
-            </MDBCol>
+          <MDBBtn outline color="light" floating className='m-1' href='https://github.com/Sachit0-0' target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </MDBBtn>
 
-            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-              <p>
-                <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
-              </p>
-              <p>
-                <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
-              </p>
-              <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
-              </p>
-              <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
-              </p>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </section>
+          <MDBBtn outline color="light" floating className='m-1' href='mailto:sachitdahal33@gmail.com' target="_blank" rel="noopener noreferrer">
+            <FaEnvelope />
+          </MDBBtn>
+        </section>
+      </MDBContainer>
 
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          khaikkhaik.com
+      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        © 2020 Copyright:
+        <a className='text-white' href='https://mdbootstrap.com/'>
+          sachitsachit.com
         </a>
       </div>
     </MDBFooter>

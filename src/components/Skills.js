@@ -7,8 +7,8 @@ import {
   faReact,
   faBootstrap,
   faNodeJs,
-  faPython,
   faGitAlt,
+  faPython,
 } from "@fortawesome/free-brands-svg-icons";
 
 function SkillItem({ name, icon }) {
@@ -31,6 +31,7 @@ const skills = [
   { name: "Node.js", icon: faNodeJs },
   { name: "Python", icon: faPython },
   { name: "Git", icon: faGitAlt },
+  { name: "Django", icon: faPython }, // Add Django skill and icon
 ];
 
 export default function Skills() {
