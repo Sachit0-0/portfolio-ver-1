@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
+import { useLocation } from 'react-router-dom';
 
 function NavbarComponent() {
+  const [activeLink, setActiveLink] = useState('/');
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update the active link whenever the location changes
+    setActiveLink(location.pathname);
+  }, [location]);
+
   return (
     <Navbar expand="lg" bg="transparent" variant="dark">
       <Container>
@@ -17,14 +26,13 @@ function NavbarComponent() {
       
         <Navbar.Brand href="#home">PORTFOLIO</Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav"  />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" />
-          <Nav className="justify-content-end"> {/* Use justify-content-end to push links to the right */}
-            <Nav.Link href="/" className="navkotext">Home</Nav.Link>
-            <Nav.Link href="/portfolio" className="navkotext">CV</Nav.Link>
-            <Nav.Link href="/Contact" className="navkotext">Contacts</Nav.Link>
-            <Nav.Link href="/" className="navkotext">Projects</Nav.Link>
+          <Nav className="justify-content-end">
+            <Nav.Link href="/" className={`navkotext ${activeLink === '/' ? 'active' : ''}`}>Home</Nav.Link>
+            <Nav.Link href="/portfolio" className={`navkotext ${activeLink === '/portfolio' ? 'active' : ''}`}>CV</Nav.Link>
+            <Nav.Link href="/Contact" className={`navkotext ${activeLink === '/Contact' ? 'active' : ''}`}>Contacts</Nav.Link>
           </Nav>
         </Navbar.Collapse> 
       </Container>

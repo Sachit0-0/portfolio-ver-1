@@ -11,35 +11,29 @@ import {
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 
-// SkillItem component for each skill
 function SkillItem({ name, icon }) {
   return (
     <div className="col-md-3 mb-5">
       <div className="bg-secondary text-white p-4 rounded text-center">
-        <FontAwesomeIcon
-          icon={icon}
-          className="text-success h4 mb-3"
-          alt={`${name} Icon`}
-        />
+        <FontAwesomeIcon icon={icon} className="text-success h4 mb-3" alt={`${name} Icon`} />
         <h4 className="h6">{name}</h4>
       </div>
     </div>
   );
 }
 
-export default function Skills() {
-  const skills = [
-    { name: "HTML", icon: faHtml5 },
-    { name: "CSS", icon: faCss3 },
-    { name: "JavaScript", icon: faJs },
-    { name: "React", icon: faReact },
-    { name: "Bootstrap", icon: faBootstrap },
-    { name: "Node.js", icon: faNodeJs },
-    { name: "Python", icon: faPython },
-    { name: "Django", icon: faPython },
-    { name: "Git", icon: faGitAlt },
-  ];
+const skills = [
+  { name: "HTML", icon: faHtml5 },
+  { name: "CSS", icon: faCss3 },
+  { name: "JavaScript", icon: faJs },
+  { name: "React", icon: faReact },
+  { name: "Bootstrap", icon: faBootstrap },
+  { name: "Node.js", icon: faNodeJs },
+  { name: "Python", icon: faPython },
+  { name: "Git", icon: faGitAlt },
+];
 
+export default function Skills() {
   return (
     <section id="skills" className="bg-dark py-5 my-4">
       <div className="container">

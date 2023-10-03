@@ -14,6 +14,7 @@ import { FaQuestionCircle } from 'react-icons/fa';
 import { MDBSpinner } from 'mdb-react-ui-kit'; // Assuming you're using MDB React UI Kit for the spinner
 
 
+
 function App() {
   const darkerBackgroundColor = 'rgb(18, 18, 18)'; // Darker background color
   const whiteTextColor = '#fff'; // White text color
@@ -30,6 +31,7 @@ function App() {
         />
 
         {/* Introduction */}
+
         <div className="container my-4">
           <div className="text-center">
             <h1 className="display-4">Sachit Dahal</h1>
@@ -39,9 +41,7 @@ function App() {
             <h2 className="text-center">Welcome to My Portfolio!</h2>
             {/* ... (Rest of the content) */}
           </div>
-        </div>
-        <div>
-          
+       
         {/* Animated Social Buttons */}
         <div className="justify-content-center my-9" >
 
@@ -86,7 +86,7 @@ function App() {
             <FaEnvelope className="icon" />
           </a>
           </div>
-          <hr className="my-4 mt-5 "  style={{ marginTop: '40px' }} />
+          <hr className="sidhaline" />
                     
 
 
@@ -106,7 +106,7 @@ function App() {
 
 
 <div className='timeliness'>
-
+<hr className="sidhaline" />
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -185,6 +185,7 @@ function App() {
           </div>
         </div>
       </Container>
+      <hr className="sidhaline" />
     </div>
     
   );

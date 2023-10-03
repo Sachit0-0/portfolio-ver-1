@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 
 import NavbarComponent from './components/navbar';
 import Footer from './components/Footer';
@@ -17,17 +17,14 @@ function App() {
     <Router>
       <div>
         <NavbarComponent />
-        
         <Routes>
-          <Route path="/" element={<Outlet />}>
-            <Route index element={<Banner />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="portfolio" element={<Portfolio />} />
-          </Route>
+          <Route path="/" element={<Banner />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+
         </Routes>
       </div>
-     
-      <Skills /> {/* Skills component is still outside of the Router */}
+     <Skills/>
       <Footer />
     </Router>
   );
