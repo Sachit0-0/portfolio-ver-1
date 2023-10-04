@@ -11,7 +11,6 @@ import Banner from './components/banner';
 import Portfolio from './routes/portfolio'; // Import Portfolio component
 import Contact from './routes/contact'; // Use capital "C"
 import Skills from './components/Skills'; // Import Skills component
-
 function App() {
   return (
     <Router>
@@ -21,10 +20,9 @@ function App() {
           <Route path="/" element={<Banner />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
-
         </Routes>
       </div>
-     <Skills/>
+      <Skills />
       <Footer />
     </Router>
   );
