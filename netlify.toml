@@ -1,3 +1,6 @@
+[build]
+  publish = "build"  # The directory where your React app's built files are located
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
