@@ -33,15 +33,22 @@ function App() {
         {/* Introduction */}
 
         <div className="container my-4">
-          <div className="text-center">
-            <h1 className="display-4">Sachit Dahal</h1>
-            <p className="typewriter">Passionate Developer | Tech Enthusiast</p>
-          </div>
-          <div className="my-4">
-            <h2 className="text-center">Welcome to My Portfolio!</h2>
-            {/* ... (Rest of the content) */}
-          </div>
-       
+        <div className="d-flex justify-content-center align-items-center 0">
+  <div className="text-center">
+    <h1 className="display-4">Sachit Dahal</h1>
+    <p className="typewriter">Passionate Developer | Tech Enthusiast</p>
+  </div>
+</div>
+<div className="d-flex justify-content-center align-items-center ">
+  <h2 className="text-center">Welcome to My Portfolio!</h2>
+  </div>
+
+
+
+
+ 
+
+
         {/* Animated Social Buttons */}
         <div className="justify-content-center my-9" >
 

@@ -1,15 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHtml5,
-  faCss3,
-  faJs,
-  faReact,
-  faBootstrap,
-  faNodeJs,
-  faGitAlt,
-  faPython,
-} from "@fortawesome/free-brands-svg-icons";
+import { faHtml5, faCss3, faJs, faReact, faBootstrap, faNodeJs, faGitAlt, faPython } from "@fortawesome/free-brands-svg-icons";
 
 function SkillItem({ name, icon }) {
   return (
@@ -31,7 +22,7 @@ const skills = [
   { name: "Node.js", icon: faNodeJs },
   { name: "Python", icon: faPython },
   { name: "Git", icon: faGitAlt },
-  { name: "Django", icon: faPython }, // Add Django skill and icon
+  { name: "Django", icon: faPython }, // Make sure the icons are distinct if these are different technologies
 ];
 
 export default function Skills() {
@@ -42,12 +33,12 @@ export default function Skills() {
           <i className="bi bi-chip h2 mb-4"></i>
           <h1 className="display-4 text-white mb-4">Skills &amp; Technologies</h1>
           <p className="lead text-white">
-          Some of the technologies that i have been working on
+            Some of the technologies that I have been working on
           </p>
         </div>
         <div className="row">
-          {skills.map((skill, index) => (
-            <SkillItem key={index} name={skill.name} icon={skill.icon} />
+          {skills.map(({ name, icon }, index) => (
+            <SkillItem key={index} name={name} icon={icon} />
           ))}
         </div>
       </div>

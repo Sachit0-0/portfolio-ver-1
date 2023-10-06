@@ -1,7 +1,7 @@
 .Logo {
   width: 30px; 
   height: 30px; 
-  
+  color: #fff !important  ; /* Bright text color (white) */
   margin: 5px;
 }
 
@@ -21,7 +21,7 @@ font-size: larger !important  ;}
 
 /* Add this CSS to your stylesheet or a separate CSS file */
   .navkotext {
-    color: #fff; /* Bright text color (white) */
+  
     margin-right: 30px; /* Add spacing between links */
     font-size: larger  !important  ;
     
@@ -67,6 +67,8 @@ footer {
 .icon {
   font-size: 3rem; /* Adjust the size as needed */
   margin-right: 1rem; /* Adjust the margin as needed */
+  padding: auto;
+  margin-top: 2rem;
   
 }
 
@@ -110,19 +112,28 @@ footer {
   margin: 90px;
 }
 
-.timeliness{
-  margin: 90px;
-  padding: 10px;
-  
-}
+
 
 /* Apply hover effect to the container */
+.bg-secondary.text-white.p-4.rounded.text-center {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
 .bg-secondary.text-white.p-4.rounded.text-center:hover {
   transform: scale(1.1);
+  opacity: 0.8; /* Adjust the opacity value as needed */
 }
 
 
 .sidhaline{
   margin-top: 50px;
   border: 3px solid white;
+}
+
+.vertical-timeline {
+  width: 100% !important; 
+  max-width: 1170px !important; 
+  margin: 0 auto;
+  position: absolute;
+  padding: 0% !important ;
 }

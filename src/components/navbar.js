@@ -15,16 +15,17 @@ function NavbarComponent() {
   }, [location]);
 
   return (
-    <Navbar expand="lg" bg="transparent" variant="dark">
+    <Navbar    bg="transparent" variant="dark">
       <Container>
         <Image
           className='Logo'
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFG47B2MsA2hApVhmJ5tfGDdLyayH3jXTRwA&usqp=CAU"
           alt="Logo"
           roundedCircle
+          href="/"
         />
       
-        <Navbar.Brand href="#home">PORTFOLIO</Navbar.Brand>
+        <Navbar.Brand href="/">PORTFOLIO</Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
         <Navbar.Collapse id="basic-navbar-nav">
