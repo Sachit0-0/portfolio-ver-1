@@ -15,7 +15,7 @@ function NavbarComponent() {
   }, [location]);
 
   return (
-    <Navbar    bg="transparent" variant="dark">
+    <Navbar bg="" variant="dark" expand="lg">
       <Container>
         <Image
           className='Logo'
@@ -28,7 +28,7 @@ function NavbarComponent() {
         <Navbar.Brand href="/">PORTFOLIO</Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="me-auto" />
           <Nav className="justify-content-end">
             <Nav.Link href="/" className={`navkotext ${activeLink === '/' ? 'active' : ''}`}>Home</Nav.Link>

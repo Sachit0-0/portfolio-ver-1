@@ -50,13 +50,13 @@ function App() {
 
 
         {/* Animated Social Buttons */}
-        <div className="justify-content-center my-9" >
+        <div className="meroicons" >
 
           <a
             href="https://github.com/Sachit0-0"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon-link mx-3"
+            className="icon-link "
           >
             <FaGithub className="icon" />
           </a>
@@ -64,7 +64,7 @@ function App() {
             href="https://www.linkedin.com/in/sachit-dahal-59a05b212/e"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon-link mx-3"
+            className="icon-link "
           >
             <FaLinkedin className="icon" />
           </a>
@@ -72,7 +72,7 @@ function App() {
             href="https://www.facebook.com/sachit.dahal.7/"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon-link mx-3"
+            className="icon-link "
           >
             <FaFacebookSquare className="icon" />
           </a>
@@ -80,7 +80,7 @@ function App() {
             href="https://www.instagram.com/sachit_0.0/"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon-link mx-3"
+            className="icon-link "
           >
             <FaInstagram className="icon" />
           </a>
@@ -88,7 +88,7 @@ function App() {
             href="mailto:sachitdahal33@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon-link mx-3"
+            className="icon-link "
           >
             <FaEnvelope className="icon" />
           </a>
@@ -111,9 +111,9 @@ function App() {
        
 
 
-
+            <hr className="sidhaline" />
 <div className='timeliness'>
-<hr className="sidhaline" />
+
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -136,7 +136,7 @@ function App() {
               icon={<SchoolIcon />}
             >
               <h3 className="vertical-timeline-element-title">SEE, ASHIRVAD BOARDING SCHOOL</h3>
-              <p style={{ color: whiteTextColor }}>GPA: 3.65</p>
+              <p style={{ color: whiteTextColor }}>GP.65</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"

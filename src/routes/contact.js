@@ -3,9 +3,10 @@ import { Container, Image } from 'react-bootstrap';
 
 function Contact() {
   return (
-    <Container className="text-center" >
+    <Container className="text-center" style={{ marginTop: '60px' }}>
       {/* Profile Image */}
       <Image
+     
         src="assests/360033919_329090166112916_8476159787953751632_n.jpg"
         roundedCircle
         alt="Profile"
@@ -22,6 +23,7 @@ function Contact() {
         </ul>
       </div>
 
+      <hr style={{ marginTop: '60px' }} />
       <hr style={{ marginTop: '40px' }} />
 
       <div className="contact-form mt-5">

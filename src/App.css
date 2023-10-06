@@ -9,6 +9,10 @@
 font-size: larger !important  ;}
  
 
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("https://w7.pngwing.com/pngs/941/357/png-transparent-computer-icons-arrow-tribal-arrows-angle-rectangle-triangle-thumbnail.png") !important;
+  border-radius: 50%;
+}
 
 
 .me-auto{
@@ -45,6 +49,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 
@@ -65,7 +70,7 @@ footer {
 /* SocialIcons.css */
 
 .icon {
-  font-size: 3rem; /* Adjust the size as needed */
+
   margin-right: 1rem; /* Adjust the margin as needed */
   padding: auto;
   margin-top: 2rem;
@@ -109,7 +114,7 @@ footer {
 }
 
 .try{
-  margin: 90px;
+  margin: 60px;
 }
 
 
@@ -131,9 +136,32 @@ footer {
 }
 
 .vertical-timeline {
+  
   width: 100% !important; 
   max-width: 1170px !important; 
   margin: 0 auto;
   position: absolute;
   padding: 0% !important ;
+  margin-top: 60px !important;
+}
+
+.meroicons {
+  display: flex;
+  justify-content: space-evenly; /* Adjust as needed */
+  width: 100%; /* Adjust the width of the container */
+  margin: 1%; /* Center the container if needed */
+}
+
+.icon-link {
+  margin: 0 10px; /* Adjust the horizontal margin to create space between icons */
+}
+
+.icon {
+  font-size: 36px; /* Adjust the size of the icons as needed */
+}
+
+.row{
+  display: flex;
+  justify-content: space-evenly; /* Adjust as needed */
+
 }
